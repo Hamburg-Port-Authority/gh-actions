@@ -144,7 +144,7 @@ jobs:
         #  ref: main
 
       - name: Helm Dependencies
-        uses: hamburg-port-authority/gh-actions/helm-dependencies@v1.0.2
+        uses: hamburg-port-authority/gh-actions/helm-dependencies@v1.0.1
         with:
           config-path: dependencies.yaml
           user-email: "dep-sheriff-bot@users.noreply.github.com"
