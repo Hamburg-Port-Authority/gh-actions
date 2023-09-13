@@ -112,12 +112,9 @@ create a `dependencies.yaml` like:
 ```
 dependencies:
   - name: "External DNS"
-    source:
-      file: examples/test-helm-chart/external-dns/Chart.yaml
-      path: .dependencies[0].version
-    repository:
-      name: bitnami/external-dns
-      path: .dependencies[0].repository
+    arrayPosition: 0
+    sourcePath: examples/test-helm-chart/external-dns
+    repositoryName: bitnami/external-dns
 ```
 
 Create file `.github/workflows/helm-dependencies-update.yml`
@@ -147,7 +144,7 @@ jobs:
         #  ref: main
 
       - name: Helm Dependencies
-        uses: la-cc/gh-actions/helm-dependencies@v0.0.8
+        uses: Hamburg-Port-Authority/gh-actions/helm-dependencies@v1.0.0
         with:
           config-path: dependencies.yaml
           user-email: "dep-sheriff-bot@users.noreply.github.com"
