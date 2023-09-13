@@ -25,9 +25,14 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            ghcr.io/Hamburg-Port-Authority/gh-actions-helm-dependencies-update
+            ghcr.io/hamburg-port-authority/gh-actions-helm-dependencies-update
           labels: |
-            org.opencontainers.image.title="Helm dependencies update"
+            org.opencontainers.image.title="GitHubActionHelmDepUpdate"
+            org.opencontainers.image.description="Image used by GitHub Action to update helm dependencies"
+            org.opencontainers.image.vendor="https://github.com/Hamburg-Port-Authority"
+            org.label-schema.url="https://github.com/Hamburg-Port-Authority/gh-actions"
+            org.label-schema.usage="https://github.com/Hamburg-Port-Authority/gh-actions/blob/main/README.md"
+            org.label-schema.schema-version="1.0"
           tags: |
             type=schedule
             type=ref,event=tag
