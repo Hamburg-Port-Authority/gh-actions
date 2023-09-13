@@ -1,4 +1,4 @@
-FROM ghcr.io/hamburg-port-authority/gh-actions-helm-dependencies-update
+FROM ghcr.io/hamburg-port-authority/gh-actions-helm-dependencies-update:v1.0.1
 
 # https://docs.github.com/en/actions/learn-github-actions/environment-variables#default-environment-variables
 ENV GITHUB_TOKEN=${GITHUB_TOKEN}
