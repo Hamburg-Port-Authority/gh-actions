@@ -25,7 +25,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            ghcr.io/la-cc/gh-actions-helm-dependencies-update
+            ghcr.io/Hamburg-Port-Authority/gh-actions-helm-dependencies-update
           labels: |
             org.opencontainers.image.title="Helm dependencies update"
           tags: |

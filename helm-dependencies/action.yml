@@ -1,6 +1,6 @@
 name: "Helm Dependencies"
 description: "Keep Helm dependencies updated"
-author: Artem Lajko
+author: Steve Golling and Artem Lajko
 
 inputs:
   config-path:
