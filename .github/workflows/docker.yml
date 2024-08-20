@@ -64,6 +64,6 @@ jobs:
 
       - name: Verify the images
         run: |
-          cosign verify ghcr.io/Hamburg-Port-Authority/cosign-test \
-            --certificate-identity https://github.com/Hamburg-Port-Authority/cosign-test/.github/workflows/main.yml@refs/heads/main \
+          cosign verify ghcr.io/Hamburg-Port-Authority/gh-actions-helm-dependencies-update \
+            --certificate-identity https://github.com/Hamburg-Port-Authority/gh-actions-helm-dependencies-update/.github/workflows/main.yml@refs/heads/main \
             --certificate-oidc-issuer https://token.actions.githubusercontent.com | jq         
